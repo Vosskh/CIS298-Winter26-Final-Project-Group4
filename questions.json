@@ -34,7 +34,7 @@
     },
     {
       "value": 200,
-      "question": "Who is the villian in The Dark Knight Rises?",
+      "question": "Who is the villain in The Dark Knight Rises?",
       "answer": "bane"
     },
     {
@@ -62,7 +62,7 @@
     {
       "value": 200,
       "question": "Who was the most recent artist to perform the Apple Music Halftime Show at the SuperBowl?",
-      "answer": "Bad Bunny"
+      "answer": "bad bunny"
     },
     {
       "value": 300,
@@ -77,7 +77,7 @@
     {
       "value": 500,
       "question": "What was Justin Bieber's debut single called?",
-      "answer": "One Time"
+      "answer": "one time"
     }
   ],
   "Video Games": [
