@@ -5,15 +5,18 @@ from game_logic import GameLogic
 
 class JeopardyGame:
     def __init__(self):
+        # loads questions and creates the score/turn system
         self.questions = load_questions()
         self.game = GameLogic()
         self.buttons = {}
 
+        # creates the main window
         self.window = tk.Tk()
         self.window.title("Jeopardy Game")
         self.window.geometry("1000x600")
         self.window.configure(bg="navy")
 
+        # title and score labels
         self.title_label = tk.Label(
             self.window,
             text="Jeopardy!",
@@ -50,12 +53,14 @@ class JeopardyGame:
         )
         self.turn_label.pack(pady=10)
 
+        # frames that holds the Jeopardy board
         self.board_frame = tk.Frame(self.window, bg="navy")
         self.board_frame.pack(pady=20)
 
         self.categories = list(self.questions.keys())
         self.values = [100, 200, 300, 400, 500]
 
+        # creates category labels and point buttons
         for col, category in enumerate(self.categories):
             category_label = tk.Label(
                 self.board_frame,
@@ -82,9 +87,12 @@ class JeopardyGame:
                     command=lambda c=category, v=value: self.show_question(c, v)
                 )
                 button.grid(row=row, column=col)
+
+                # saves each button so it can be disabled after use
                 self.buttons[(category, value)] = button
 
     def show_question(self, category, value):
+        # finds the question that matches the clicked category and value
         question_data = None
 
         for question in self.questions[category]:
@@ -93,6 +101,7 @@ class JeopardyGame:
                 break
 
         if question_data:
+            # opens a popup window for the question that was picked
             question_window = tk.Toplevel(self.window)
             question_window.title(f"{category} - {value}")
             question_window.geometry("500x400")
@@ -136,18 +145,22 @@ class JeopardyGame:
             submit_button.pack(pady=10)
 
     def check_answer(self, correct_answer, user_answer, value, result_label, question_window, category):
+        # compares the player's answer to the correct answer
         if user_answer.lower().strip() == correct_answer.lower().strip():
             self.game.add_points(value)
             result_label.config(text="Correct!")
         else:
             result_label.config(text=f"Wrong! Correct answer: {correct_answer}")
 
+        # updates the score on the main screen
         player1_score, player2_score = self.game.get_scores()
         self.player1_label.config(text=f"Player 1 Score: {player1_score}")
         self.player2_label.config(text=f"Player 2 Score: {player2_score}")
 
+        # disables the question after it was used
         self.buttons[(category, value)].config(state="disabled")
 
+        # switches turns after each question
         self.game.switch_turn()
         current_player = self.game.get_current_player()
         self.turn_label.config(text=f"Current Turn: Player {current_player}")
