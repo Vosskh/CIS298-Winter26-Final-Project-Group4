@@ -1,0 +1,137 @@
+{
+  "Sports": [
+    {
+      "value": 100,
+      "question": "How many points is a touchdown worth in football?",
+      "answer": "6"
+    },
+    {
+      "value": 200,
+      "question": "How many players from one basketball team are on the court at a time?",
+      "answer": "5"
+    },
+    {
+      "value": 300,
+      "question": "What country won the 2022 FIFA World Cup?",
+      "answer": "argentina"
+    },
+    {
+      "value": 400,
+      "question": "What NBA player has the most points in NBA history?",
+      "answer": "lebron james"
+    },
+    {
+      "value": 500,
+      "question": "What NFL team has won the most Super Bowls?",
+      "answer": "pittsburgh steelers"
+    }
+  ],
+  "Movies": [
+    {
+      "value": 100,
+      "question": "What movie features the character Simba?",
+      "answer": "the lion king"
+    },
+    {
+      "value": 200,
+      "question": "Who is the villian in The Dark Knight Rises?",
+      "answer": "bane"
+    },
+    {
+      "value": 300,
+      "question": "Who is the lead actor in the new Michael Jackson movie?",
+      "answer": "jaafar jackson"
+    },
+    {
+      "value": 400,
+      "question": "What was Voldemort's real name in Harry Potter?",
+      "answer": "tom riddle"
+    },
+    {
+      "value": 500,
+      "question": "What was the robots name in Interstellar who said 'they didn't bring us here to change the past'?",
+      "answer": "tars"
+    }
+  ],
+  "Music": [
+    {
+      "value": 100,
+      "question": "Who sings the song 'Headlines'?",
+      "answer": "drake"
+    },
+    {
+      "value": 200,
+      "question": "Who was the most recent artist to perform the Apple Music Halftime Show at the SuperBowl?",
+      "answer": "Bad Bunny"
+    },
+    {
+      "value": 300,
+      "question": "What artist is known as the King of Pop?",
+      "answer": "michael jackson"
+    },
+    {
+      "value": 400,
+      "question": "What album features the songs 'Billie Jean' and 'Beat It'?",
+      "answer": "thriller"
+    },
+    {
+      "value": 500,
+      "question": "What was Justin Bieber's debut single called?",
+      "answer": "One Time"
+    }
+  ],
+  "Video Games": [
+    {
+      "value": 100,
+      "question": "What company created Mario?",
+      "answer": "nintendo"
+    },
+    {
+      "value": 200,
+      "question": "What game features blocks, creepers, and crafting?",
+      "answer": "minecraft"
+    },
+    {
+      "value": 300,
+      "question": "What city is GTA 5 based off of?",
+      "answer": "los angeles"
+    },
+    {
+      "value": 400,
+      "question": "What game series features the character Master Chief?",
+      "answer": "halo"
+    },
+    {
+      "value": 500,
+      "question": "What is the best selling game console of all time?",
+      "answer": "ps2"
+    }
+  ],
+  "TV Shows": [
+    {
+      "value": 100,
+      "question": "What TV show features the characters SpongeBob and Patrick?",
+      "answer": "spongebob squarepants"
+    },
+    {
+      "value": 200,
+      "question": "What actor plays Michael Scott in The Office?",
+      "answer": "steve carell"
+    },
+    {
+      "value": 300,
+      "question": "What TV show features a chemistry teacher named Walter White?",
+      "answer": "breaking bad"
+    },
+    {
+      "value": 400,
+      "question": "Who were the winners of Love Island USA Season 6?",
+      "answer": "serena and kordell"
+    },
+    {
+      "value": 500,
+      "question": "Who is the head of security and hitman for Gus Fring in Breaking Bad?",
+      "answer": "mike ehrmantraut"
+    }
+  ]
+}
