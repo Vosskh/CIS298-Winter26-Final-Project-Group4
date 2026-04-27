@@ -165,6 +165,8 @@ class JeopardyGame:
         current_player = self.game.get_current_player()
         self.turn_label.config(text=f"Current Turn: Player {current_player}")
 
+        question_window.after(1000, question_window.destroy)
+
     def run(self):
         self.window.mainloop()
 
