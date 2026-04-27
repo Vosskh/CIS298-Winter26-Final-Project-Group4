@@ -1,0 +1,3 @@
+Vossk Hang 10/10 - did a good job contributing to the project and helping our group stay on track. They completed the parts they were responsible for and communicated well.
+
+Ali Zahr 10/10 - helped lay the foundation for our project by setting up the initial structure and getting us started. They contributed to the early development of the Jeopardy app and helped give the group a clear starting point to build from.
